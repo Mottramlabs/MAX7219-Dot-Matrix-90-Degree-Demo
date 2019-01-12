@@ -8,4 +8,7 @@ The demo was written for an Arduino but also works with a ESP8266. The only chan
 
   SPI.setFrequency(15000000L);    // Only needed for ESP8266, does not work with UNO
 
+To set the size of the display or number of MAX7219 chips in the file MAX7219_Functions.h edit the following.
+#define Number_MAX7219 8                         // Number of MAX7219 chips present
+
 David
