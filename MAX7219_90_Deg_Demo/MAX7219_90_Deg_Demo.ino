@@ -12,7 +12,7 @@
           +5V       5V            VCC
           GND       GND           GND
   DIN     D11/MOSI  GPIO13 (D7)   DIN
-  CS      *D7/SS    *GPIO15 (D8)   CS
+  CS      *D10/SS    *GPIO15 (D8)   CS
   CLK     D13/SCK   GPIO14 (D5)   CLK
 
 */
