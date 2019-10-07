@@ -6,7 +6,7 @@
               +5V       5V            VCC
               GND       GND           GND
       DIN     D11/MOSI  GPIO13 (D7)   DIN
-      CS      *D7/SS    *GPIO15 (D8)   CS
+      CS      *D10/SS    *GPIO15 (D8)   CS
       CLK     D13/SCK   GPIO14 (D5)   CLK
 
        Select in software
@@ -17,8 +17,8 @@
 // --------------------------------------------------------------------------------------
 
 // MAX7219 items
-#define Number_MAX7219 8                         // Number of MAX7219 chips present
-#define MAX7219_CS  7                             // Pin used for CS. 7=UNO 15=ESP8266
+#define Number_MAX7219 4                         // Number of MAX7219 chips present
+#define MAX7219_CS  10                             // Pin used for CS. 7=UNO 15=ESP8266
 
 // 90 Deg Font library
 #include "Font_90_Degrees.h"
