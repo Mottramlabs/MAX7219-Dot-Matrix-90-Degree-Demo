@@ -3,6 +3,7 @@
     Date:         16th June 2020
     Version:      1
     Description:  Sample code
+    Author:		    David Mottram
     Device:       ESP8266
 
     NTP information based on the great work by G6EJD - David
