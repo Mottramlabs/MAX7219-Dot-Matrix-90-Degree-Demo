@@ -11,4 +11,5 @@ The demo was written for an Arduino but also works with a ESP8266. The only chan
 To set the size of the display or number of MAX7219 chips in the file MAX7219_Functions.h edit the following.
 #define Number_MAX7219 8                         // Number of MAX7219 chips present
 
+Demo Video of the Matrix clock https://www.youtube.com/watch?v=r3AHPEftqeU
 David
