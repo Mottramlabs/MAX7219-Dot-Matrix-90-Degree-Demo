@@ -30,13 +30,11 @@ void WiFi_Startup(const char* ssid, const char* password) {
 
     // Print connection progress ticker
     Serial.print(".");
-    delay(100);
-//    digitalWrite(Network_LED, HIGH);
-    delay(100);
-//    digitalWrite(Network_LED, LOW);
+    delay(200);
     TimeOut ++;
 
   } // end connection loop
+
 
   // if connected
   if (WiFi.status() == WL_CONNECTED) {
@@ -76,8 +74,7 @@ void WiFi_Startup(const char* ssid, const char* password) {
 
     // print a connection report
     Serial.println("");
-    Serial.print("WiFi connected, "); Serial.print("DHCP IP Address = "); Serial.print(WiFi.localIP());
-    // Serial.print(", "); Serial.println(Status_Report());
+    Serial.print("WiFi connected, "); Serial.print("DHCP IP Address = "); Serial.println(WiFi.localIP());
 
   } // end of connected
 

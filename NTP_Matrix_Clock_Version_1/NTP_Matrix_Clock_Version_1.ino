@@ -111,6 +111,8 @@ void loop() {
 
     // blink the colon, default is every 0.5 second
     if ((bitRead(Flash_Blink, 0)) == 0) {
+      // init also sets the brightness using Intensity
+      MAX7219_Init();
       Display_Clock(Clock, 1);
     }
     else {
@@ -127,7 +129,17 @@ void loop() {
     NTP_Update_Timer = millis();
     //get_time();
     Clock = get_time();
-    Serial.println(Clock);
+
+    // very way to set brightness based on time of day
+    long Time_Now = Clock.toInt();
+
+    if (Time_Now >= 600 && Time_Now < 2200) {
+      Intensity = 4;
+    }
+    else {
+      Intensity = 0;
+    }
+    Serial.print(Time_Now); Serial.print("  "); Serial.print("Intensity: "); Serial.println(Intensity);
 
   } // end NTP update
 

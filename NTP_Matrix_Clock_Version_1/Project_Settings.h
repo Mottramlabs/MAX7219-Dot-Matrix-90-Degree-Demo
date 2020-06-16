@@ -19,7 +19,7 @@ String Clock = "0000";
 int8_t Flash_Blink = 0;
 int Flash_Timer = 0;
 #define Flash_rate 500                            // flash the colon every 0.5 seconds
-#define Default_Brightness 8
+#define Default_Brightness 0
 
 int NTP_Update_Timer = 0;
 #define NTP_Update_rate 30000                     // NTP update in mS (3000 = 30 seconds)
