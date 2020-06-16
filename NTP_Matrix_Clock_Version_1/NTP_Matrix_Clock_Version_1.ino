@@ -5,6 +5,7 @@
     Description:  Sample code
     Author:       David Mottram
     Device:       ESP8266
+    WiFi:         See the file Wifi_Settings.h for access point and password details
 
     NTP information based on the great work by G6EJD - David
     See his youtube channel https://www.youtube.com/user/G6EJD/videos
